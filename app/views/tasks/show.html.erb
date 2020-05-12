@@ -3,5 +3,7 @@
   <li><%= @task.details %></li>
 </u>l
 
+<%= link_to "Edit task", edit_path %>
+<%= link_to "Delete task", task_path(@task), method: :delete %>
 <%= link_to "See all tasks", tasks_path %>
 
